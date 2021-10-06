@@ -6,5 +6,13 @@ package ex41;
  */
 
 
+import java.io.IOException;
+
+
 public class App {
+    public static HandleOutput main (String[] args) throws IOException {
+        new FileReader("src/main/java/ex41/exercse41_input.txt");
+        String[] arrayOfnames = FileReader.getValues();
+        return new HandleOutput(arrayOfnames);
+    }
 }
